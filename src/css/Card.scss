@@ -1,0 +1,59 @@
+@import './Global.scss';
+
+.card-box {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0,0,0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 15px;
+  > .title {
+    font-size: 16px;
+    line-height: 1em;
+    font-weight: 600;
+    color: $very-dark-blue;
+  }
+  > .description {
+    font-size: 14px;
+    line-height: 1.6em;
+    color: $grayish-blue;
+  }
+  > .icon {
+    position: absolute;
+    align-self: flex-end;
+    bottom: 32px;
+  }
+}
+
+.card-box:hover {
+  transform: scale(1.009);
+}
+
+@media screen and (min-width: 376px) {
+  .card-box {
+    margin: unset;
+  }
+  .card-box:nth-child(1) {
+    grid-column: 1;
+  }
+  .card-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .card-box:nth-child(3) {
+    grid-row: 2;
+  }
+  .card-box:nth-child(4) {
+    grid-column: 3;
+  }
+  .card-box:nth-child(1),
+  .card-box:nth-child(4) {
+    grid-row: span 2;
+    align-self: center;
+  }
+  .card-box:nth-child(2),
+  .card-box:nth-child(3) {
+    grid-column: 2;
+  }
+}

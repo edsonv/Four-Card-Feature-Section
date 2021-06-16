@@ -1,0 +1,40 @@
+/* Normalize styles */
+@import './Normalize.scss';
+@import './Helpers.scss';
+
+/* 
+  Typography
+*/
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+$font-stack: 'Poppins', sans-serif;
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+* {
+  font-family: $font-stack;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $very-light-gray;
+}
+
+.cards {
+  > .card-box {
+    width: 311px;
+    height: 222px;
+    @media screen and (min-width: 376px) {
+      width: 350px;
+      height: 250px;
+    }
+  }
+}
