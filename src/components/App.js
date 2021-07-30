@@ -1,10 +1,8 @@
 import React from 'react'
-import '../css/Global.scss'
-import '../css/Cards.scss'
 import Header from './Header'
 import Footer from './Footer'
 import CardItem from './Card'
-import cardsData from '../cards'
+import cardsData from '../cardsData'
 
 class App extends React.Component {
   constructor() {
@@ -15,7 +13,7 @@ class App extends React.Component {
   }
   render() {
     const cardsComponent = this.state.cards.map(card => (
-      <CardItem key={card.id} card={card} />
+      <CardItem key={ card.id } card={ card } />
     ))
     return (
       <React.Fragment>

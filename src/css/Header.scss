@@ -1,4 +1,3 @@
-@import './Global.scss';
 
 .header-container {
   text-align: center;
@@ -16,5 +15,7 @@
     line-height: 1.7em;
     color: $grayish-blue;
     font-weight: 400;
+    max-width: 56%;
+    margin: auto;
   }
 }

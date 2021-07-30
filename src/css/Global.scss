@@ -1,12 +1,3 @@
-/* Normalize styles */
-@import './Normalize.scss';
-@import './Helpers.scss';
-
-/* 
-  Typography
-*/
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 $font-stack: 'Poppins', sans-serif;
 $very-dark-blue: hsl(234, 12%, 34%);
@@ -26,15 +17,4 @@ $very-light-gray: hsl(0, 0%, 98%);
   align-items: center;
   min-height: 100vh;
   background-color: $very-light-gray;
-}
-
-.cards {
-  > .card-box {
-    width: 311px;
-    height: 222px;
-    @media screen and (min-width: 376px) {
-      width: 350px;
-      height: 250px;
-    }
-  }
 }
